@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sendGrid = require('@sendGrid/mail');
-//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
+
 
 const app = express();
 
@@ -24,7 +24,7 @@ app.get('/api', (req, res, next) => {
 
 app.post('/api/email', (req, res, next) => {
 
-   sendGrid.setApiKey('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');
+   sendGrid.setApiKey('');
    const msg = {
      to: 'ryan.parekh101@gmail.com',
      from: req.body.email,
