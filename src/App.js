@@ -22,9 +22,9 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact'}
       ],
       home: {
-        title: 'Obtain This Grain',
-        subTitle: 'Yeet This Wheat',
-        text: 'Check out my stuff man'
+        title: 'Welcome to my website!',
+        subTitle: 'My name is Ryan Parekh!',
+        text: 'Learn more about me!'
       },
 
       about: {
