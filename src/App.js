@@ -30,8 +30,13 @@ class App extends React.Component {
       ],
       home: {
         title: 'Welcome to my website!',
+<<<<<<< HEAD
         subTitle: 'I will be updating about my life and programming progress.',
         text: 'If you have any questions, shoot me an email in the Contact page!'
+=======
+        subTitle: 'My name is Ryan Parekh!',
+        text: 'Learn more about me!'
+>>>>>>> 4812e19ed97fc5b6ac8cfed138f3bbcc3ba9a6aa
       },
 
       about: {
