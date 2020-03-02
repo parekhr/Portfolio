@@ -1,7 +1,5 @@
 import React from 'react';
 
-import twitch from '../assets/twitch.png';
-import youtube from '../assets/youtube.jpg';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 
@@ -19,22 +17,6 @@ class Carousel extends React.Component {
           items: [
             {
               id: 0,
-              title: 'My Youtube Channel',
-              subTitle: 'Maplestory/League of Legends/Pokemon',
-              imgSrc: youtube,
-              link: 'https://www.youtube.com/channel/UCJKXbVXSO6AClfUnrw87KzA?view_as=subscriber',
-              selected: false
-            },
-            {
-              id: 1,
-              title: 'Twitch Channel',
-              subTitle: 'I livestream stuff',
-              imgSrc: twitch,
-              link: 'https://www.twitch.tv/bestribbonna',
-              selected: false
-            },
-            {
-              id: 2,
               title: 'My Github',
               subTitle: 'Check out my projects!',
               imgSrc: github,
@@ -42,7 +24,7 @@ class Carousel extends React.Component {
               selected: false
             },
             {
-              id: 3,
+              id: 1,
               title: 'My LinkedIn',
               subTitle: 'Connect with me!',
               imgSrc: linkedin,

@@ -19,13 +19,17 @@ code {
 
 .g-card-image {
   width: 100px;
-  background-color: white;
   height: 100px;
+  background-color: white;
+  border: 3px solid black;
 }
 
 .g-card-info {
   margin-top: 10px;
   min-height: 100px;
+  font-size: 24px;
+  background-color: white;
+  border: 3px solid black;
 }
 
 

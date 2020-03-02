@@ -59,7 +59,6 @@ class ContactPage extends React.Component{
             });
         })
   }
-
   render() {
     return(
       <div>
@@ -91,6 +90,10 @@ class ContactPage extends React.Component{
 
           </Form>
         </Content>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
       </div>
     );
   }

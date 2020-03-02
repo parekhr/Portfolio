@@ -9,6 +9,13 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import background from './assets/background.jpg';
+
+const awesomeBackground = {
+  paperContainer: {
+    backgroundImage: `url(${background})`
+  }
+}
 
 class App extends React.Component {
 
@@ -22,9 +29,9 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact'}
       ],
       home: {
-        title: 'Obtain This Grain',
-        subTitle: 'Yeet This Wheat',
-        text: 'Check out my stuff man'
+        title: 'Welcome to my website!',
+        subTitle: 'I will be updating about my life and programming progress.',
+        text: 'If you have any questions, shoot me an email in the Contact page!'
       },
 
       about: {
@@ -32,25 +39,25 @@ class App extends React.Component {
       },
 
       contact: {
-        title: 'Let\'s talk',
-      }
+        title: 'Contact me!',
+      },
+
     }
   }
 
   render(){
     return (
-      <div className="background-lightgreen">
+      <div style={awesomeBackground.paperContainer}>
       <Router>
         <Container className="p-0" fluid={true}>
-
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Ryan Parekh</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <Link className="nav-link" className="nav-link-size" style={{ textDecoration: 'none' }} to="/">Home</Link>
+                <Link className="nav-link" className="nav-link-size" style={{ textDecoration: 'none' }} to="/about">About</Link>
+                <Link className="nav-link" className="nav-link-size" style={{ textDecoration: 'none' }} to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
